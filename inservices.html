@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- DEVELOPER: Rahman Khaliq, IS117-002, Spring 2020 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rehman Developers LLC.</title>
+    <link rel="shortcut icon" href="images/RDSimpleLogo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <h2>Rehman Developers LLC.</h2>
+    <img src="images/RDSimpleLogo.png" alt="RD Logo" height="80">
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html" class="current">Our Services</a>
+            <ul>
+                <li><a href="outservices.html">Outdoor Services</a></li>
+                <li><a href="inservices.html" class="current">Indoor Services</a></li>
+                <li><a href="compservices.html">Complete Services</a></li>
+            </ul>
+        </li>
+        <li><a href="work.html">Our Work</a>
+            <ul>
+                <li><a href="prevprojects.html">Previous Projects</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Indoor Services</h1>
+    <div class="row">
+        <div class="column">
+            <p>We provide a variety of indoor services that are available to our customers. They are as follows:</p>
+        </div>
+        <div class="column">
+            <ul>
+                <li>Sheetrocking</li>
+                <li>Framing</li>
+                <li>Kitchen work</li>
+                <li>Bathroom work</li>
+                <li>Electrical Work</li>
+                <li>Plumbing</li>
+                <li>Flooring</li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li>Painting</li>
+                <li>Mold Removal</li>
+                <li>Basement Work</li>
+                <li>Water damage treatment</li>
+                <li>Indoor lighting</li>
+                <li>Appliance installation</li>
+                <li>HVAC</li>
+                <li>and much more!</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<footer>
+    <aside>&copy; 04/30/2020, Rahman Khaliq</aside>
+    <p>Terms of Service &nbsp; &nbsp; Privacy Policy</p>
+</footer>
+</body>
+</html>

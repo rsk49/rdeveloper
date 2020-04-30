@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- DEVELOPER: Rahman Khaliq, IS117-002, Spring 2020 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rehman Developers LLC.</title>
+    <link rel="shortcut icon" href="images/RDSimpleLogo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <h2>Rehman Developers LLC.</h2>
+    <img src="images/RDSimpleLogo.png" alt="RD Logo" height="80">
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a>
+            <ul>
+                <li><a href="outservices.html">Outdoor Services</a></li>
+                <li><a href="inservices.html">Indoor Services</a></li>
+                <li><a href="compservices.html">Complete Services</a></li>
+            </ul>
+        </li>
+        <li><a href="work.html" class="current">Our Work</a>
+            <ul>
+                <li><a href="prevprojects.html">Previous Projects</a></li>
+                <li><a href="testimonials.html" class="current">Testimonials</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Testimonials</h1>
+    <div class="row">
+        <div class="column">
+            <p>&quot;Rehman Developers LLC. provided my business with all of our construction needs.
+            Last year, we needed a remodel of our office structure and they provided all services that were needed for the job.
+            Saboor helped me throughout the whole process. He was extremely friendly and professional all through the length of the contract.&quot;
+            <br><br> &hyphen;<i>Ricky Johnson, Sunshine Accounting (2020)</i></p>
+        </div>
+        <div class="column">
+            <p>&quot;I am extremely pleased with the work that Rehman Developers LLC. provided for my family.
+                We recently wanted an extension to our house for a guest suite. They provided all the services we needed.
+                The pricing was very reasonable considering the amount of work need to be done.&quot;
+                <br><br> &hyphen;<i>Rajiv Patel (2020)</i></p>
+        </div>
+        <div class="column">
+            <p>&quot;Working with a company with this level of professionalism was refreshing. Often times construction work is a chore to get done.
+                Rehman Developers made everything easy to understand and walked us through each step. There was a level of communication that we appreciated.
+                With their prices and their customer service, no one can beat Rehman Developers!&quot;
+                <br><br> &hyphen;<i>Catherine Dumars (2020)</i></p>
+        </div>
+    </div>
+</main>
+<footer>
+    <aside>&copy; 04/30/2020, Rahman Khaliq</aside>
+    <p>Terms of Service &nbsp; &nbsp; Privacy Policy</p>
+</footer>
+</body>
+</html>

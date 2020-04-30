@@ -1,0 +1,296 @@
+/*DEVELOPER: Rahman Khaliq, IS117-002, Spring 2020*/
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 99%;                     /* changed from 800 pixels */
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #173248;
+    background-color: white;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	text-align: center;
+	border-bottom: 3px solid #173248;
+		background-image: -moz-linear-gradient(
+	    30deg, #95B9C7 0%, #95B9C7 30%, white 50%, #95B9C7 80%, #95B9C7 100%);
+	background-image: -webkit-linear-gradient(
+			30deg, #95B9C7 0%, #95B9C7 30%, white 50%, #95B9C7 80%, #95B9C7 100%);
+	background-image: -o-linear-gradient(
+			30deg, #95B9C7 0%, #95B9C7 30%, white 50%, #95B9C7 80%, #95B9C7 100%);
+	background-image: linear-gradient(
+			30deg, #95B9C7 0%, #95B9C7 30%, white 50%, #95B9C7 80%, #95B9C7 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: #173248;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #173248;
+}
+/* the styles for the navigation menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 20%;                 /* 160 / 800 x 100 */
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #173248;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu a.current {
+	color: cornflowerblue;
+}
+#nav_menu ul ul {
+	width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+main h1 {
+	font-size: 150%;
+	padding: 1em 0 1em 1em;
+	margin: 0;
+}
+
+main p {
+	font-size: 110%;
+	padding: 0 0 1em 1.5em;
+	margin: 0;
+}
+
+main ul {
+	list-style-type: square;
+	padding: 0 0 1em 4em;
+}
+
+main img {
+	padding: 30px 0 30px 0;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main button {
+	border: 2px solid cornflowerblue;
+	background-color: white;
+	padding: 14px 28px;
+	font-size: 16px;
+	cursor: pointer;
+	color: cornflowerblue;
+}
+
+main button:hover {
+	background: cornflowerblue;
+	color: white;
+}
+
+main div {
+	text-align: center;
+	padding-bottom: 30px;
+}
+
+main label {
+	font-size: 110%;
+	padding-left: 1.5em;
+	width: 200px;
+}
+
+div .column {
+	float: left;
+	text-align: justify;
+	width: 31.25%;
+	padding: 10px;
+}
+
+div  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* the styles for the section */
+section {
+	width: 50%;
+	float: right;
+	padding: 0 2.5% 20px 2.5%;
+	text-align: justify;
+}
+section h1 {
+	font-size: 150%;
+	padding: 1em 0 .25em 0;
+	margin: 0;
+}
+section h2 {
+	color: #173248;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+section p {
+	padding: 1em 0 .5em 0;
+}
+section blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+section ul {
+	padding: 0 0 .25em 1.25em;
+	list-style-type: circle;
+}
+section li {
+	padding-bottom: .35em;
+}
+
+/* the styles for the article */
+article {
+	padding: .5em 0;
+	border-top: 2px solid #173248;
+	border-bottom: 2px solid #173248;
+}
+article h2 {
+	padding-top: 0;
+}
+article h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+article img {
+	float: right;
+	max-width: 40%;
+	min-width: 150px;
+	margin: .5em 0 1em 1em;
+	border: 1px solid black;
+}
+
+/* the styles for the aside */
+aside {
+	width: 33%;                     /* 215 / 800 x 100 */
+	float: left;
+	padding: 0 0 20px 7.5%;
+	color: white;/* 20 / 800 x 100 */
+}
+
+aside h2 {
+	color: #173248;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+
+aside h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+aside img {
+	padding-bottom: 1em;
+}
+
+/* the styles for the footer */
+footer {
+	background-color: #173248;
+	clear: both;
+
+}
+
+footer aside {
+	text-align: left;
+	color: white;
+	padding: 1em 0 1em 5px;
+}
+
+footer p {
+	text-align: right;
+	color: white;
+	padding: 1em 0 1em 10px;
+}
+#mobile_menu {
+	display: none;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+	section h1 { font-size: 135%; }
+	section h2, aside h2 { font-size: 120%; }
+}
+
+/* mobile landscape to tablet portrait */
+@media only screen and (max-width: 767px) {
+	header img { float: none; }
+	header { text-align: center; }
+	section {
+		float: none;
+		width: 95%;                     /* 100 - (2 x 2.5) for padding */
+	}
+	aside {
+		float: none;
+		padding-right: 2.5%;           /* 20 / 800 x 100 */
+		width: 95%;                    /* 100 - (2 x 2.5) for padding */
+	}
+	article img { max-width: 30%; }
+	#speakers {
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	}
+	#nav_menu {
+		display: none;
+	}
+	#mobile_menu {
+		display: block;
+	}
+	.slicknav_menu {
+		background-color: #173248 !important;
+	}
+}
+
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+	body { font-size: 90%; }
+}

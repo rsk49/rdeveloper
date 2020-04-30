@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- DEVELOPER: Rahman Khaliq, IS117-002, Spring 2020 -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rehman Developers LLC.</title>
+    <link rel="shortcut icon" href="images/RDSimpleLogo.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <h2>Rehman Developers LLC.</h2>
+    <img src="images/RDSimpleLogo.png" alt="RD Logo" height="80">
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Our Services</a>
+            <ul>
+                <li><a href="outservices.html">Outdoor Services</a></li>
+                <li><a href="inservices.html">Indoor Services</a></li>
+                <li><a href="compservices.html">Complete Services</a></li>
+            </ul>
+        </li>
+        <li><a href="work.html">Our Work</a>
+            <ul>
+                <li><a href="prevprojects.html">Previous Projects</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html" class="current">Contact</a></li>
+    </ul>
+</nav>
+<main>
+    <h1>Contact</h1>
+    <p>Include your name and contact info, along with any details about your project.
+        <br />We hope to hear from you soon!</p>
+
+    <label for="name">Name:</label> <br />
+    <input type="text" id="name" name="name" style="width:600px; margin-left: 1.5em"><br><br>
+
+    <label for="phone">Phone Number:</label> <br />
+    <input type="text" id="phone" name="phone" style="width:600px; margin-left: 1.5em"><br><br>
+
+    <label for="email">Email Address:</label> <br />
+    <input type="text" id="email" name="email" style="width:600px; margin-left: 1.5em"><br><br>
+
+    <label for="description">Description:</label> <br />
+    <input type="text" id="description" name="description" style="width:600px; margin-left: 1.5em; height: 100px;"><br><br>
+
+    <br />
+
+    <div><button onclick="myFunction()"><h3>Send</h3></button></div>
+
+    <script>
+        function myFunction() {
+            location.replace("contact.html")
+        }
+    </script>
+</main>
+<footer>
+    <aside>&copy; 04/30/2020, Rahman Khaliq</aside>
+    <p>Terms of Service &nbsp; &nbsp; Privacy Policy</p>
+</footer>
+</body>
+</html>
